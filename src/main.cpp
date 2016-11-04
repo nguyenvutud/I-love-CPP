@@ -196,6 +196,9 @@ void test_random_function()
 }
 int main(){
 
+	// Test stash (store temporarily)
+	cout << "hello stash" << endl;
+
 //	libsNV::Person nv("Hoang Thi P");
 //	cout<< nv.getName() << endl;
 //	nv.Print();
