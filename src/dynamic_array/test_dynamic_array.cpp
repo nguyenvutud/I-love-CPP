@@ -1,32 +1,24 @@
-#include <iostream>
-#include <thread>
-#include <algorithm>
-
-//#include "dynamic_array/dynamic_array.h"
-//#include "Macros/testmacros.hpp"
-using namespace std;
-
-
-//int main ()
-//{
-//	testmacros t;
-//	t.displayresult();
+///*
+// * test_dynamic_array.cpp
+// *
+// *  Created on: Jan 13, 2017
+// *      Author: nguyenvu
+// */
+//#include <iostream>
 //
-//    return 0;
-//}
-
-
-///TEST DYNAMIC ARRAY
-//function for outputting array items
+//#include "dynamic_array.h"
+//using namespace std;
+//
+////function for outputting array items
 //void output_array(dynamic_array<int> &array)
 //{
 //	for(unsigned int i = 0; i< array.GetSize(); i++)
 //		cout << array[i] << ", ";
 //	cout << endl;
 //}
-//In majority of real-life applications you sould use STL vector class for dynamic arrays, since it provides more detailed and reliabile implementation
-//As you may see in operator [] source code, Dynamic_array arrays doesn't have boundary checking.
-//Dynamic_array class is not suitable for storing custom C++ objects(with constructors), becase of low-level memory access functions (malloc, memcpy, realloc). It can handle only basic types (char, int, double, float) and structs based on basic types.
+////In majority of real-life applications you sould use STL vector class for dynamic arrays, since it provides more detailed and reliabile implementation
+////As you may see in operator [] source code, Dynamic_array arrays doesn't have boundary checking.
+////Dynamic_array class is not suitable for storing custom C++ objects(with constructors), becase of low-level memory access functions (malloc, memcpy, realloc). It can handle only basic types (char, int, double, float) and structs based on basic types.
 //int run(void)
 //{
 //	dynamic_array<int> array;
@@ -87,22 +79,6 @@ using namespace std;
 //		// that's all!
 //		return 0;
 //}
-
-
-
-
-void funcPtr()
-{
-	for(int i=1; i<10;i++)
-		std::cout<<"first func:"<<i<<std::endl;
-}
-
-int main()
-{
-	std::thread th(funcPtr);
-	th.detach();
-
-    // If we comment this Line, then program will crash
-//    ThreadRAII wrapperObj(threadObj);
-    return 0;
-}
+//
+//
+//
